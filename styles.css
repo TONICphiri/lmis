@@ -1,11 +1,23 @@
-.login{
-    padding: 15px;
-    margin-top: 5px;
-    border-radius: 8%;
-    border-color: blue;
+*{
+background-color: gray;
+border-radius: 1px solid blue;
 }
 
-.button{
-    color: aquamarine;
+.login-form{
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 300px;
+    border-radius: 8%;
+    border-color: blue;
+
+}
+
+.bttn{
+    background-color: white !important;
     border-radius: 25%;
+    border-color: red;
+}
+
+.username{
+    margin-bottom: 20px;
 }

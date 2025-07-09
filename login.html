@@ -3,25 +3,25 @@
 <head>
     <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">   
-
-    
 </head> 
-
 <body>
 
-        <section class="login">
+        <section class="login-form">
             <h1>Login</h1>
             <form action="login.php" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <div class="username">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required> <br>
+                </div>
                 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <div class="password">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+                </div>
                 
-                <button type="submit" class="button">Login</button>
+                
+                <button type="submit" class="bttn">Login</button>
             </form> 
         </section>
-    
-
 </body>
 </html>
