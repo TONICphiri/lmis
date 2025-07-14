@@ -1,22 +1,32 @@
+/* === Global / Layout === */
 .form {
-    background-image:url("10077.jpg");
+    background-image: url("10077.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-color: aliceblue;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 66vh;                /* full‑screen height */
 }
 
+.form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);   /* 40 % black overlay */
+    z-index: -1;                      /* behind form contents */
+}
+
+/* === Login Card === */
 .login-form {
     margin: auto;
     width: 100%;
     max-width: 350px;
+    /* let height follow content so it stays perfectly centred */
     padding: 30px;
-    border-radius: 10px;
     border: 2px solid blue;
+    border-radius: 10px;
     background-color: rgba(22, 21, 21, 0.85);
     box-shadow: 0 0 15px rgba(224, 3, 3, 0.3);
     color: white;
@@ -28,6 +38,7 @@
     color: tomato;
 }
 
+/* === Form Rows === */
 .form1 {
     display: flex;
     justify-content: space-between;
@@ -48,14 +59,16 @@
     border: 1px solid #ccc;
 }
 
+/* === Submit Button === */
 .bttn {
-    width: 50%;
+    display: block;           /* makes margin auto work */
+    width: 50%;               /* keep at half card width */
+    margin: 20px auto 0;      /* centers horizontally and adds top gap */
     padding: 10px;
     background-color: blueviolet;
-    border: red;
+    border: 1px solid red;    /* visible red border */
     border-radius: 5px;
     cursor: pointer;
-    display: inline-block;
 }
 
 .bttn:hover {
